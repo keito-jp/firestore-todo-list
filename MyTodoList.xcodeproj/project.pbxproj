@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8FAF791DB31A8A930E105D1 /* Pods_MyTodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4C34D7A007AEBE100B3F94 /* Pods_MyTodoList.framework */; };
+		C3110CE6229CD0E900D918D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3110CE5229CD0E900D918D5 /* GoogleService-Info.plist */; };
 		C3CFD6CA228E889A00FA4FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFD6C9228E889A00FA4FF3 /* AppDelegate.swift */; };
 		C3CFD6CC228E889A00FA4FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFD6CB228E889A00FA4FF3 /* ViewController.swift */; };
 		C3CFD6CF228E889A00FA4FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CFD6CD228E889A00FA4FF3 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FBFED1F447BEE62C96C6E0D /* Pods-MyTodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.release.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.release.xcconfig"; sourceTree = "<group>"; };
+		5B4C34D7A007AEBE100B3F94 /* Pods_MyTodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3D9CE2E5614941E9493FF4 /* Pods-MyTodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.debug.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.debug.xcconfig"; sourceTree = "<group>"; };
+		C3110CE5229CD0E900D918D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C3CFD6C6228E889A00FA4FF3 /* MyTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CFD6C9228E889A00FA4FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CFD6CB228E889A00FA4FF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FAF791DB31A8A930E105D1 /* Pods_MyTodoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		674E5058490B42055C3CAC11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4C34D7A007AEBE100B3F94 /* Pods_MyTodoList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96454B41B38509FA9BCFC5F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C3D9CE2E5614941E9493FF4 /* Pods-MyTodoList.debug.xcconfig */,
+				4FBFED1F447BEE62C96C6E0D /* Pods-MyTodoList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C3CFD6BD228E889A00FA4FF3 = {
 			isa = PBXGroup;
 			children = (
 				C3CFD6C8228E889A00FA4FF3 /* MyTodoList */,
 				C3CFD6C7228E889A00FA4FF3 /* Products */,
+				96454B41B38509FA9BCFC5F4 /* Pods */,
+				674E5058490B42055C3CAC11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		C3CFD6C8228E889A00FA4FF3 /* MyTodoList */ = {
 			isa = PBXGroup;
 			children = (
+				C3110CE5229CD0E900D918D5 /* GoogleService-Info.plist */,
 				C3CFD6C9228E889A00FA4FF3 /* AppDelegate.swift */,
 				C3CFD6CB228E889A00FA4FF3 /* ViewController.swift */,
 				C3CFD6CD228E889A00FA4FF3 /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3CFD6D8228E889B00FA4FF3 /* Build configuration list for PBXNativeTarget "MyTodoList" */;
 			buildPhases = (
+				A05F318546690C18BA434F46 /* [CP] Check Pods Manifest.lock */,
 				C3CFD6C2228E889A00FA4FF3 /* Sources */,
 				C3CFD6C3228E889A00FA4FF3 /* Frameworks */,
 				C3CFD6C4228E889A00FA4FF3 /* Resources */,
+				9E3A717E808A8ECA00D9828A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CFD6D4228E889B00FA4FF3 /* LaunchScreen.storyboard in Resources */,
+				C3110CE6229CD0E900D918D5 /* GoogleService-Info.plist in Resources */,
 				C3CFD6D1228E889B00FA4FF3 /* Assets.xcassets in Resources */,
 				C3CFD6CF228E889A00FA4FF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E3A717E808A8ECA00D9828A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTodoList/Pods-MyTodoList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTodoList/Pods-MyTodoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05F318546690C18BA434F46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTodoList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3CFD6C2228E889A00FA4FF3 /* Sources */ = {
@@ -280,6 +369,7 @@
 		};
 		C3CFD6D9228E889B00FA4FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3D9CE2E5614941E9493FF4 /* Pods-MyTodoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +388,7 @@
 		};
 		C3CFD6DA228E889B00FA4FF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FBFED1F447BEE62C96C6E0D /* Pods-MyTodoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
