@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B8FAF791DB31A8A930E105D1 /* Pods_MyTodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4C34D7A007AEBE100B3F94 /* Pods_MyTodoList.framework */; };
-		C3110CE6229CD0E900D918D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3110CE5229CD0E900D918D5 /* GoogleService-Info.plist */; };
+		C3110CE8229D094400D918D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3110CE7229D094400D918D5 /* GoogleService-Info.plist */; };
 		C3CFD6CA228E889A00FA4FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFD6C9228E889A00FA4FF3 /* AppDelegate.swift */; };
 		C3CFD6CC228E889A00FA4FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFD6CB228E889A00FA4FF3 /* ViewController.swift */; };
 		C3CFD6CF228E889A00FA4FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CFD6CD228E889A00FA4FF3 /* Main.storyboard */; };
@@ -20,7 +20,7 @@
 		4FBFED1F447BEE62C96C6E0D /* Pods-MyTodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.release.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.release.xcconfig"; sourceTree = "<group>"; };
 		5B4C34D7A007AEBE100B3F94 /* Pods_MyTodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3D9CE2E5614941E9493FF4 /* Pods-MyTodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.debug.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.debug.xcconfig"; sourceTree = "<group>"; };
-		C3110CE5229CD0E900D918D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C3110CE7229D094400D918D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C3CFD6C6228E889A00FA4FF3 /* MyTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CFD6C9228E889A00FA4FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CFD6CB228E889A00FA4FF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		C3CFD6C8228E889A00FA4FF3 /* MyTodoList */ = {
 			isa = PBXGroup;
 			children = (
-				C3110CE5229CD0E900D918D5 /* GoogleService-Info.plist */,
+				C3110CE7229D094400D918D5 /* GoogleService-Info.plist */,
 				C3CFD6C9228E889A00FA4FF3 /* AppDelegate.swift */,
 				C3CFD6CB228E889A00FA4FF3 /* ViewController.swift */,
 				C3CFD6CD228E889A00FA4FF3 /* Main.storyboard */,
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CFD6D4228E889B00FA4FF3 /* LaunchScreen.storyboard in Resources */,
-				C3110CE6229CD0E900D918D5 /* GoogleService-Info.plist in Resources */,
+				C3110CE8229D094400D918D5 /* GoogleService-Info.plist in Resources */,
 				C3CFD6D1228E889B00FA4FF3 /* Assets.xcassets in Resources */,
 				C3CFD6CF228E889A00FA4FF3 /* Main.storyboard in Resources */,
 			);
